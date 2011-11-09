@@ -45,7 +45,7 @@ class MoviePlotGenerator {
 		$plot  = "He's a $his_adjective $his_occupation with a $his_quirk. ";
 		$plot .= "She's a $her_adjective $her_occupation with a $her_quirk. ";
 		$plot .= "They fight crime.";
-		$plot .= "\n\nFeature 1: hey its feature One.";
+		
 		return $plot;
 	}
 	
@@ -58,7 +58,7 @@ class MoviePlotGenerator {
 	 */	
 	protected function getRandom($arr)
 	{
-		return $arr[rand(0, count($arr) - 1)];
+		return $arr[mt_rand(0, count($arr) - 1)];
 	}
 		
 }
